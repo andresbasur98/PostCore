@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "VerificarUsuario";
+}
+
+<h1>VerificarUsuario</h1>
+<hr />
+@if (ViewData["MENSAJE"] != null)
+{
+    <h1 style="color: blue">@ViewData["MENSAJE"]</h1>
+}
+<form method="post">
+    <input class="form-control" type="text" placeholder="email" name="email" /><br />
+    <input class="form-control" type="text" placeholder="password" name="password" /> <br />
+
+    <button type="submit" class="btn btn-primary">
+        Verificar
+    </button>
+</form>
